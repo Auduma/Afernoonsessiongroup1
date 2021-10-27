@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <div style="text-align: center;">
+    <input type="number" placeholder="enter value" required id="box1">
+    <input type="number" placeholder="enter value" required id="box2">
+    <input type="number" placeholder="results" required id="answer" readonly><br><br>
+    <button onclick="add()">ADD</button><br><br>
+        <button onclick="subtraction()"> SUBTRATION</button><br><br>
+        <button onclick="multiplication()"> MULTIPLICATION</button><br><br>
+        <button onclick="division()">DIVISION</button><br><br>
+        <button onclick="modulo()"> MODULO</button><br><br>
+    </div>
+    
+</body>
+<script>
+    function add() {
+        var num1=document.getElementById("box1").value;
+        var num2=document.getElementById("box2").value;
+        var answer= Number(num1) + Number(num2);
+        document.getElementById("answer").value =answer
+    }
+    function subtraction() {
+        var num1=document.getElementById("box1").value;
+        var num2=document.getElementById("box2").value;
+        var answer= Number(num1) - Number(num2);
+        document.getElementById("answer").value =answer
+    }
+    function division () {
+        var num1=document.getElementById("box1").value;
+        var num2=document.getElementById("box2").value;
+        var answer= Number(num1) / Number(num2);
+        document.getElementById("answer").value =answer
+    }
+    function multiplication() {
+        var num1=document.getElementById("box1").value;
+        var num2=document.getElementById("box2").value;
+        var answer= Number(num1) * Number(num2);
+        document.getElementById("answer").value =answer
+    }
+    function modulo() {
+        var num1=document.getElementById("box1").value;
+        var num2=document.getElementById("box2").value;
+        var answer= Number(num1) % Number(num2);
+        document.getElementById("answer").value =answer
+    }
+</script>
+</html>

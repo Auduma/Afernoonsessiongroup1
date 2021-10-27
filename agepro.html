@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .id{
+            background-image: url(living-in-the-light.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% ;
+        }
+        .is{
+            font-size: 50px;
+            text-decoration: wavy;
+            color: blue;
+            
+        }
+    </style>
+</head>
+<body style="text-align: center;" class="id">
+    <h1 style="text-align: center; color: darkgreen; text-decoration: underline;">AGE DETERMINANT FORM</h1>
+    <marquee class="is" behavior="alternate" direction="right">No strees</marquee>
+    <p id="message" style="font-size: 50px;"></p>
+    <div>
+        <input type="number" placeholder="input age" id="age" style="border-radius: 40px; font-size: 50px; text-align: center;"><br><br>
+    </div>
+    
+    <button onclick="adds()" style="font-size: 50px; border-radius: 50px; text-align: center; color: black;">click</button>
+
+    <script>
+        function adds(){
+            var age = document.getElementById("age").value
+
+            if(age <= 17 && age >= 1)
+            document.getElementById("message").innerHTML = "children everywhere"
+            document.getElementById("message").style.color = "red"
+        }
+    </script><br><br>
+    <h1 style="color: darkgreen;">MUSIC</h1>
+    <audio controls>
+        <source src="com.mp3" style="border-radius: 50px; background-color: red;"
+
+    
+
+
+</body>
+</html>

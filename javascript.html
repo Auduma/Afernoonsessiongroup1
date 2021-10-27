@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h1 id="header">hello</h1>
+    <button onclick="red()">red</button>
+    <button onclick="blue()">blue</button>
+    <button onclick="green()">green</button>
+    <script>
+function red() {
+    document.getElementById("header").innerHTML="RED";
+    document.getElementById("header").style.color="red";
+}
+function blue() {
+    document.getElementById("header").innerHTML="BLUE";
+    document.getElementById("header").style.color="blue"
+}
+   function green() {
+       document.getElementById("header").innerHTML="GREEN";
+        document.getElementById("header").style.color="green";
+   } 
+    </script>
+    
+</body>
+</html>
